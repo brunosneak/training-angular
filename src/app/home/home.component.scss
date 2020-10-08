@@ -1,0 +1,43 @@
+.bgMain,
+.bg1,
+.bg2,
+.bg3,
+.bg4,
+.bg5,
+.bg6 {
+	background-size: cover;
+	background-position: center;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.bgMain {
+	background-image: url("../../assets/img/bgMain.svg");
+}
+
+.bg1 {
+	background-image: url("../../assets/img/bg1.svg");
+}
+
+.bg2 {
+	background-image: url("../../assets/img/bg2.svg");
+}
+
+.bg3 {
+	background-image: url("../../assets/img/bg3.svg");
+}
+
+.bg4 {
+	background-image: url("../../assets/img/bg4.svg");
+}
+
+.bg5 {
+	background-image: url("../../assets/img/bg5.svg");
+}
+
+.bg6 {
+	background-image: url("../../assets/img/bg6.svg");
+}
