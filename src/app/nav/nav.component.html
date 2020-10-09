@@ -1,8 +1,29 @@
-<nav class="navToggle">
-	<div class="menuBurger">
-		<span class="span1"></span>
-		<span class="span2"></span>
-		<span class="span3"></span>
+<nav
+	class="navToggle"
+	[ngClass]="{
+		navOpen: navStatus === true,
+		navClosed: navStatus === false
+	}"
+>
+	<div class="menuBurger" (click)="animButton()">
+		<span
+			[ngClass]="{
+				isOpen1: navStatus === true,
+				isClosed1: navStatus === false
+			}"
+		></span>
+		<span
+			[ngClass]="{
+				isOpen2: navStatus === true,
+				isClosed2: navStatus === false
+			}"
+		></span>
+		<span
+			[ngClass]="{
+				isOpen3: navStatus === true,
+				isClosed3: navStatus === false
+			}"
+		></span>
 	</div>
 	<ul>
 		<li>Mon Cv</li>

@@ -1,6 +1,6 @@
 .navToggle {
 	align-items: center;
-	background-image: url("../../assets/img/fondVertDuJeu.svg");
+	background-color: #fff;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -8,9 +8,9 @@
 	display: flex;
 	justify-content: center;
 	height: 100vh;
-	// left: -30rem;
 	position: relative;
 	width: 40rem;
+	z-index: 20;
 	.menuBurger {
 		align-items: center;
 		background-color: #000000;
@@ -36,6 +36,42 @@
 			top: 1.2rem;
 			width: 3rem;
 		}
+		.isOpen1 {
+			transition: transform 0.5s, width 0.5s, left 0.5s;
+			left: 0.5rem;
+			transform: rotate(45deg);
+			width: 55%;
+			transform-origin: top left;
+		}
+		.isClosed1 {
+			transition: transform 0.5s, width 0.5s, left 0.5s;
+			left: 0;
+			transform: rotate(0);
+			width: 50%;
+			transform-origin: top left;
+		}
+		.isOpen2 {
+			opacity: 0;
+			transition: opacity 0.5s;
+		}
+		.isClosed2 {
+			opacity: 1;
+			transition: opacity 0.5s;
+		}
+		.isOpen3 {
+			transition: transform 0.5s, width 0.5s, left 0.5s;
+			left: 0.3rem;
+			transform: rotate(-45deg);
+			width: 55%;
+			transform-origin: top left;
+		}
+		.isClosed3 {
+			transition: transform 0.5s, width 0.5s, left 0.5s;
+			left: 0;
+			transform: rotate(0);
+			width: 50%;
+			transform-origin: top left;
+		}
 	}
 	ul {
 		display: flex;
@@ -58,4 +94,12 @@
 			content: none;
 		}
 	}
+}
+.navOpen {
+	left: 0;
+	transition: left 0.5s;
+}
+.navClosed {
+	left: -30rem;
+	transition: left 0.5s;
 }
