@@ -8,7 +8,7 @@
 	display: flex;
 	justify-content: center;
 	height: 100vh;
-	position: relative;
+	position: fixed;
 	width: 40rem;
 	z-index: 20;
 	.menuBurger {
@@ -77,10 +77,16 @@
 		display: flex;
 		flex-direction: column;
 		li {
-			color: #000;
-			font-size: 2.5rem;
+			font-size: 3rem;
+			font-weight: 700;
 			margin-bottom: 2.5rem;
 			text-align: center;
+			a {
+				color: #000;
+			}
+			.active {
+				color: red;
+			}
 			&::after {
 				content: "";
 				background-color: #000;
@@ -97,9 +103,9 @@
 }
 .navOpen {
 	left: 0;
-	transition: left 0.5s;
+	transition: left 0.5s ease-out;
 }
 .navClosed {
 	left: -30rem;
-	transition: left 0.5s;
+	transition: left 0.5s ease-in;
 }

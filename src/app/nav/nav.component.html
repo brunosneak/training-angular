@@ -26,8 +26,18 @@
 		></span>
 	</div>
 	<ul>
-		<li>Mon Cv</li>
-		<li>Contactez-moi</li>
-		<li>Mes Projets</li>
+		<li>
+			<a
+				[routerLink]="['/']"
+				routerLinkActive="active"
+				[routerLinkActiveOptions]="{ exact: true }"
+				>Accueil</a
+			>
+		</li>
+		<li><a [routerLink]="['/cv']" routerLinkActive="active">Mon Cv</a></li>
+		<li>
+			<a [routerLink]="['/contact']" routerLinkActive="active">Contactez-moi</a>
+		</li>
+		<li><a [routerLink]="['/#']" routerLinkActive="active">Mes Projets</a></li>
 	</ul>
 </nav>
