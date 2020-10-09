@@ -1,0 +1,149 @@
+.myDescr {
+	background-color: #000;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 50vh 50vh;
+	grid-template-areas:
+		"wrapphoto descript"
+		"icons icons";
+	place-items: center;
+	.wrapperPhoto {
+		align-items: center;
+		display: flex;
+		grid-area: wrapphoto;
+		height: 100%;
+		justify-content: center;
+		width: 100%;
+		.photo {
+			height: 35rem;
+		}
+	}
+	.description {
+		display: flex;
+		flex-direction: column;
+		grid-area: descript;
+		justify-content: center;
+		width: 70%;
+		p {
+			margin: 0;
+		}
+		p:first-of-type {
+			font-size: 5rem;
+		}
+		p:nth-of-type(2) {
+			font-size: 3rem;
+		}
+		p:nth-of-type(3) {
+			font-size: 3rem;
+			margin-bottom: 2rem;
+		}
+		article {
+			line-height: 2.5rem;
+			strong {
+				font-size: 2rem;
+				font-weight: 400;
+			}
+		}
+	}
+	.technoIcons {
+		grid-area: icons;
+		ul {
+			display: grid;
+			grid-row-gap: 2rem;
+			grid-column-gap: 4rem;
+			grid-template-columns: repeat(5, 1fr);
+			grid-template-areas:
+				"html css sass js"
+				"jquery angular node git mongo";
+			.sizeIcon {
+				height: 11rem;
+				width: 11rem;
+			}
+		}
+	}
+}
+.xp {
+	background-image: url("../../assets/img/bgCv.svg");
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+}
+.contact {
+	background-color: #000;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	place-items: center;
+	.winSkull {
+		max-width: 40rem;
+		padding: 0 2rem;
+	}
+	.dlcv {
+		display: flex;
+		flex-direction: column;
+		justify-self: flex-start;
+		padding: 0 2rem;
+		text-align: center;
+		h3 {
+			font-size: 5rem;
+			font-weight: 400;
+		}
+		.btnDlcv {
+			border-radius: 3rem;
+			font-size: 2.5rem;
+			margin: 1rem 0;
+			padding: 1.5rem 0;
+			border: 2px solid #fff;
+			color: #fff;
+			background-color: #000;
+			transition: background-color 1s;
+			width: 100%;
+			outline: none;
+			cursor: pointer;
+			&:hover {
+				background-color: #6bed8c;
+				color: #000;
+				transition: background-color 1s;
+			}
+		}
+		.link {
+			margin: 1rem 0;
+			.btnContact {
+				cursor: pointer;
+				border-radius: 30rem;
+				font-size: 2.5rem;
+				padding: 1.5rem 0;
+				width: 100%;
+				border: 2px solid #f7b3b1;
+				background-color: #f7b3b1;
+				outline: none;
+			}
+		}
+	}
+	.social {
+		display: flex;
+		flex-direction: column;
+		justify-self: flex-start;
+		padding: 0 2rem;
+		h3 {
+			font-weight: 400;
+			font-size: 4rem;
+		}
+		li {
+			margin: 1rem 0;
+			width: max-content;
+			a {
+				display: flex;
+				img {
+					width: 6rem;
+					height: 6rem;
+					margin-right: 3rem;
+				}
+				p {
+					font-size: 3rem;
+				}
+			}
+		}
+	}
+}
