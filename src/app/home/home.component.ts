@@ -9,7 +9,7 @@ import {
 @Component({
 	selector: "app-home",
 	templateUrl: "./home.component.html",
-	styleUrls: ["./home.component.scss"],
+	styleUrls: ["./home.component.scss", "./home.component.responsive.scss"],
 })
 export class HomeComponent implements OnInit, AfterViewInit {
 	@ViewChild("monPerso") public monPerso: ElementRef;

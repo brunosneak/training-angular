@@ -1,15 +1,15 @@
 .myDescr {
 	background-color: #000;
-	height: 100vh;
+	height: auto;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 50vh 50vh;
+	grid-template-rows: auto;
 	grid-template-areas:
 		"wrapphoto descript"
 		"icons icons";
 	place-items: center;
 	.wrapperPhoto {
-		align-items: center;
+		align-items: flex-end;
 		display: flex;
 		grid-area: wrapphoto;
 		height: 100%;
@@ -17,48 +17,55 @@
 		width: 100%;
 		.photo {
 			height: 35rem;
+			margin-bottom: 4rem;
+			margin-top: 12rem;
 		}
 	}
-	.description {
+	.wrapperDescr {
+		align-items: flex-end;
 		display: flex;
-		flex-direction: column;
 		grid-area: descript;
+		height: 100%;
 		justify-content: center;
-		width: 70%;
-		p {
-			margin: 0;
-		}
-		p:first-of-type {
-			font-size: 5rem;
-		}
-		p:nth-of-type(2) {
-			font-size: 3rem;
-		}
-		p:nth-of-type(3) {
-			font-size: 3rem;
-			margin-bottom: 2rem;
-		}
-		article {
-			line-height: 2.5rem;
-			strong {
-				font-size: 2rem;
-				font-weight: 400;
+		width: 100%;
+		.description {
+			margin-left: 12rem;
+			margin-bottom: 7rem;
+			width: 70%;
+			p {
+				margin: 0;
+			}
+			p:first-of-type {
+				font-size: 5rem;
+			}
+			p:nth-of-type(2) {
+				font-size: 3rem;
+			}
+			p:nth-of-type(3) {
+				font-size: 3rem;
+				margin-bottom: 2rem;
+			}
+			article {
+				text-align: justify;
+				line-height: 2.5rem;
+				strong {
+					font-size: 2rem;
+					font-weight: 400;
+				}
 			}
 		}
 	}
 	.technoIcons {
 		grid-area: icons;
+		padding: 10rem 0;
 		ul {
 			display: grid;
 			grid-row-gap: 2rem;
 			grid-column-gap: 4rem;
 			grid-template-columns: repeat(5, 1fr);
-			grid-template-areas:
-				"html css sass js"
-				"jquery angular node git mongo";
 			.sizeIcon {
-				height: 11rem;
-				width: 11rem;
+				height: 12rem;
+				width: 12rem;
 			}
 		}
 	}
@@ -75,15 +82,22 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	place-items: center;
-	.winSkull {
-		max-width: 40rem;
-		padding: 0 2rem;
+	.wrapperSkull {
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		width: 100%;
+		.winSkull {
+			width: 40rem;
+			padding: 2rem;
+		}
 	}
 	.dlcv {
 		display: flex;
 		flex-direction: column;
-		justify-self: flex-start;
+		justify-content: center;
 		padding: 0 2rem;
+		height: 100%;
 		text-align: center;
 		h3 {
 			font-size: 5rem;
@@ -124,8 +138,9 @@
 	.social {
 		display: flex;
 		flex-direction: column;
-		justify-self: flex-start;
+		justify-content: center;
 		padding: 0 2rem;
+		height: 100%;
 		h3 {
 			font-weight: 400;
 			font-size: 4rem;
