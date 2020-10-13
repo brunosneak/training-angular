@@ -1,15 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-cv',
-  templateUrl: './cv.component.html',
-  styleUrls: ['./cv.component.scss']
+	selector: "app-cv",
+	templateUrl: "./cv.component.html",
+	styleUrls: ["./cv.component.scss"],
 })
-export class CvComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class CvComponent {
+	constructor() {}
 }

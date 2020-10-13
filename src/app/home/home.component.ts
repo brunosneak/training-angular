@@ -1,15 +1,38 @@
-import { Component, OnInit } from '@angular/core';
+import {
+	Component,
+	OnInit,
+	ViewChild,
+	ElementRef,
+	AfterViewInit,
+} from "@angular/core";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+	selector: "app-home",
+	templateUrl: "./home.component.html",
+	styleUrls: ["./home.component.scss"],
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
+	@ViewChild("monPerso") public monPerso: ElementRef;
 
-  constructor() { }
+	constructor() {}
 
-  ngOnInit(): void {
-  }
+	ngOnInit(): void {}
 
+	ngAfterViewInit(): void {
+		this.jump();
+	}
+
+	jump() {
+		let idSetInterval;
+		let persoPosition = this.monPerso.nativeElement.offsetLeft;
+		idSetInterval = setInterval(() => {
+			persoPosition -= 165;
+			if (this.monPerso) {
+				this.monPerso.nativeElement.style.left = persoPosition + "px";
+			}
+			if (persoPosition <= -2300) {
+				clearInterval(idSetInterval);
+			}
+		}, 200);
+	}
 }

@@ -10,6 +10,12 @@
           "style": "scss"
         }
       },
+      "i18n": {
+        "sourceLocale":"fr",
+        "locales": {
+          "en": "src/locales/messages.en.xlf"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -33,7 +39,11 @@
             "scripts": []
           },
           "configurations": {
+            "en": {
+              "localize": ["en"]
+            },
             "production": {
+              "localize":true,
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -71,6 +81,9 @@
           "configurations": {
             "production": {
               "browserTarget": "training-angular:build:production"
+            },
+            "en": {
+              "browserTarget": "training-angular:build:en"
             }
           }
         },

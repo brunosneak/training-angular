@@ -4,7 +4,6 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	border-radius: 0 2rem 2rem 0;
 	display: flex;
 	justify-content: center;
 	height: 100vh;
@@ -13,20 +12,17 @@
 	z-index: 20;
 	.menuBurger {
 		align-items: center;
-		background-color: #000000;
 		border: 0.2rem solid #fff;
-		border-radius: 5rem;
 		display: flex;
 		flex-direction: column;
 		height: 6rem;
-		opacity: 0.7;
 		width: 6rem;
 		position: absolute;
 		top: 2rem;
 		right: 2rem;
 		cursor: pointer;
 		span {
-			background-color: #fff;
+			background-color: #000;
 			border-radius: 1rem;
 			height: 0.3rem;
 			left: 0;
@@ -76,11 +72,12 @@
 	ul {
 		display: flex;
 		flex-direction: column;
+		position: relative;
+		left: -5rem;
 		li {
 			font-size: 3rem;
 			font-weight: 700;
 			margin-bottom: 2.5rem;
-			text-align: center;
 			a {
 				color: #000;
 			}
@@ -98,6 +95,20 @@
 		}
 		:last-child::after {
 			content: none;
+		}
+	}
+	.social {
+		position: absolute;
+		bottom: 2rem;
+		right: 3rem;
+		a {
+			display: flex;
+			margin-bottom: 2rem;
+			img {
+				background-color: #000;
+				height: 4rem;
+				width: 4rem;
+			}
 		}
 	}
 }
