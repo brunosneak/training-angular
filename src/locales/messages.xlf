@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="1db6cc9a977f9ab640d4794214922775a6de0785" datatype="html">
+        <source>Accueil</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f3fcfe105270f4604d966fc1730b8158ad9a7396" datatype="html">
+        <source>Mon Cv</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="070fdfc2fa0e0c632bb72a40a099097774dff3b0" datatype="html">
+        <source>Contactez-moi</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/cv/cv.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="69bebfce6ab5803917bb4df5b17e41ee603b3b2e" datatype="html">
+        <source>Mes Projets</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav/nav.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2fb059c909f3bbc3bb5f039c35e8113941079bdd" datatype="html">
+        <source>BONJOUR</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/cv/cv.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="925791c956bc307110308ec3f385d07941583685" datatype="html">
+        <source>Je suis NEAK Bruno</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/cv/cv.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="63b35079a44bee1e6ef0bda8c4b3fd8e6b5e2e1a" datatype="html">
+        <source>Développeur front-end React junior</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/cv/cv.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="abd27d8b6bbbb701520d695882639b46adddcef5" datatype="html">
+        <source>
+			Diplômé d’une certification professionnelle de niveau 6, à
+			l’école-multimédia, j’ai également entrepris de me spécialiser dans le
+			javaScript au sein de l’organisme de IFOCOP. Mes qualités : Assimiler
+			rapidement, m’adapter à mon environnement et le travail d’équipe. Je suis
+			également une personne d’humeur joviale, altruiste et observatrice, autant
+			d’atouts qui assureront un climat de sérénité et de challenge au sein de
+			votre équipe.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+			<x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>
+				Je suis actuellement à la recherche d&apos;un emploi, et disponible
+				immédiatement, en tant que developpeur front-end React junior.
+			<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>
+		</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/cv/cv.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d548c0677836d050f9f270912df68dfbe2aa7056" datatype="html">
+        <source>
+			Alors si on <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+			travaillait ensemble !
+		</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/cv/cv.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="145fc44badfe8fd203aaa8e8ca43be14fd9b6d04" datatype="html">
+        <source>Télécharger mon cv.pdf</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/cv/cv.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="736f67251bcb7f6312bae5fd0cc031c0949af747" datatype="html">
+        <source>
+			Vous pouvez <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+			aussi me suivre
+		</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/cv/cv.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b22bd4ab3c24090a7230b461569075bbef718ff3" datatype="html">
+        <source>Nom *</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="87c5e70b1624fcb3c2b2ccb937de1128495df83f" datatype="html">
+        <source>* champs obligatoires</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dee4f8a57a983f799be11db23fe7b71e8db16c20" datatype="html">
+        <source>Envoyer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

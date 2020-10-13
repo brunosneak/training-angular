@@ -1,0 +1,38 @@
+@mixin responsive($device) {
+	// mobile mode portrait
+	@if $device == mobile {
+		@media screen and (max-width: 575.98px) {
+			@content;
+		}
+	}
+	// mobile mode paysage
+	@if $device == smartphone {
+		@media screen and (max-width: 767.98px) {
+			@content;
+		}
+	}
+	// tablette
+	@if $device == tablette {
+		@media screen and (max-width: 991.98px) {
+			@content;
+		}
+	}
+	// desktop
+	@if $device == desktop {
+		@media screen and (max-width: 1199.98px) {
+			@content;
+		}
+	}
+}
+
+@include responsive(desktop) {
+}
+
+@include responsive(tablette) {
+}
+
+@include responsive(smartphone) {
+}
+
+@include responsive(mobile) {
+}
