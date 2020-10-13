@@ -99,6 +99,7 @@
 		padding: 0 2rem;
 		height: 100%;
 		text-align: center;
+		width: 100%;
 		h3 {
 			font-size: 5rem;
 			font-weight: 400;
@@ -112,7 +113,7 @@
 			color: #fff;
 			background-color: #000;
 			transition: background-color 1s;
-			width: 100%;
+			width: 30rem;
 			outline: none;
 			cursor: pointer;
 			&:hover {
@@ -128,7 +129,7 @@
 				border-radius: 30rem;
 				font-size: 2.5rem;
 				padding: 1.5rem 0;
-				width: 100%;
+				width: 30rem;
 				border: 2px solid #f7b3b1;
 				background-color: #f7b3b1;
 				outline: none;
@@ -139,7 +140,6 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding: 0 2rem;
 		height: 100%;
 		h3 {
 			font-weight: 400;
